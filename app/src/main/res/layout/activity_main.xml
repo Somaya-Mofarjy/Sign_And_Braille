@@ -1,52 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:ignore="HardcodedText">
 
     <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Check out these samples and their sources for the most basic use cases."
+        android:text="IDK SAM AND THE TEAM!!!."
         android:layout_marginBottom="16dp" />
 
-    <Button
-        android:id="@+id/simple_three_tabs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Simple example with three tabs" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:id="@+id/nouf"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/nouf1"/>
 
-    <Button
-        android:id="@+id/icons_only"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tabs with icons only" />
 
-    <Button
-        android:id="@+id/five_tabs_custom_colors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Using custom colors and fonts" />
 
-    <Button
-        android:id="@+id/five_tabs_changing_colors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Five tabs with changing colors" />
 
-    <Button
-        android:id="@+id/three_tabs_quick_return"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Three tabs with Quick Return" />
 
-    <Button
-        android:id="@+id/badges"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Using Badges" />
 
-</LinearLayout>
+    <com.roughike.bottombar.BottomBar
+        android:id="@+id/bottomBar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        app:bb_tabXmlResource="@xml/bottombar_tabs_color_changing"
+        app:bb_behavior="shifting|underNavbar" />
+
+
+</RelativeLayout>
